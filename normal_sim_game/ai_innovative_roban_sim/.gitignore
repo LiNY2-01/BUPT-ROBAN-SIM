@@ -1,0 +1,7 @@
+build
+devel
+.vscode
+.DS_Store
+*.pyc
+.idea
+venv

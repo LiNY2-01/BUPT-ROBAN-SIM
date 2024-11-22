@@ -1,0 +1,11 @@
+<launch>
+  <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
+    <!-- resolution in meters per pixel -->
+    <param name="resolution" value="0.10" />
+
+    <!-- 增量式构建地图时，需要提供输入的点云帧和静态全局帧之间的 TF 变换 -->
+    <param name="frame_id" type="string" value="map" />
+    <param name="filter_ground" type="bool" value="false" />
+    <param name="pointcloud_min_z" value="0.15" />
+  </node>
+</launch>
