@@ -1,20 +1,24 @@
-# Build ROBAN V-Rep SIM Environment on your PC
+# BUPT-ROBAN-SIM 
+
+北邮智能机器人交互实验仿真作业，仅供参考
+
+## Build ROBAN V-Rep SIM Environment on your PC
 
 due to the v-rep sim is extremely slow in cpu, you can try to build the sim on you own pc. I have built the sim on my ubuntu 20.04 PC .
 
-## WSL (NOT TESTED)
+### WSL (NOT TESTED)
 
 TODO......
 
-## Ubuntu 20.04 
+### Ubuntu 20.04 
 
 TODO......
 
 docker
 
-# 程序运行使用说明（环境配置与参数设置等）
+## 程序运行使用说明（环境配置与参数设置等）
 
-## 仿真环境
+### 仿真环境
 
 打开roscore后，启动V-Rep，打开ai_innovative_roban_sim_task10_upstair.ttt。
 
@@ -28,7 +32,7 @@ echo "121" | sudo -S bash bodyhub.sh &
 ```
 
 
-## 启动定位和建图功能
+### 启动定位和建图功能
 
 分别在三个终端中启动：
 
@@ -44,7 +48,7 @@ roslaunch ros_actions_node sim_octomap.launch
 rosrun rviz rviz -d roban.rviz
 ```
 
-## 导航模块使用
+### 导航模块使用
 
 进入 nav_dev，使用catkin_make指令编译。
 
@@ -61,13 +65,13 @@ source devel/setup.bash
 roslaunch humanoid_planner_2d humanoid_planner_2d.launch 
 ```
 
-### 启动轨迹跟踪
+#### 启动轨迹跟踪
 
 ```Bash
 cd  ~/robot_ros_application/catkin_ws/src/ros_actions_node/scripts/game/2022/caai_roban_challenge/path_track && python3 Task_path_tracking.py 
 ```
 
-### 启动键盘控制
+#### 启动键盘控制
 
 ```Bash
 cd  ~/robot_ros_application/catkin_ws/src/ros_actions_node/scripts/game/2022/caai_roban_challenge/path_track && python3 key_ctrl.py 
