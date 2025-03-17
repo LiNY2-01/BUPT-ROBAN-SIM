@@ -6,12 +6,12 @@
         "limitSymbolsToIncludedHeaders": false
       },
       "includePath": [
-        "/home/liny2/fan/liny2_nav_dev/devel/include/**",
+        "${workspaceFolder}/nav_dev/devel/include/**",
         "/opt/ros/noetic/include/**",
-        "/home/liny2/fan/liny2_nav_dev/src/humanoid_navigation/footstep_planner/include/**",
-        "/home/liny2/fan/liny2_nav_dev/src/humanoid_navigation/gridmap_2d/include/**",
-        "/home/liny2/fan/liny2_nav_dev/src/humanoid_navigation/humanoid_localization/include/**",
-        "/home/liny2/fan/liny2_nav_dev/src/humanoid_navigation/humanoid_planner_2d/include/**",
+        "${workspaceFolder}/nav_dev/src/humanoid_navigation/footstep_planner/include/**",
+        "${workspaceFolder}/nav_dev/src/humanoid_navigation/gridmap_2d/include/**",
+        "${workspaceFolder}/nav_dev/src/humanoid_navigation/humanoid_localization/include/**",
+        "${workspaceFolder}/nav_dev/src/humanoid_navigation/humanoid_planner_2d/include/**",
         "/usr/include/**"
       ],
       "name": "ROS",

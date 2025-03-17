@@ -1,2 +1,0 @@
-humanoid_msgs/humanoid_msgs
-/home/liny2/fan/liny2_nav_dev/devel/.private/humanoid_msgs/cmake.lock /home/liny2/fan/liny2_nav_dev/devel/./cmake.lock

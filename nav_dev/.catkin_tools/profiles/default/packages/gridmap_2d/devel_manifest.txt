@@ -1,6 +1,0 @@
-humanoid_navigation/gridmap_2d
-/home/liny2/fan/liny2_nav_dev/devel/.private/gridmap_2d/cmake.lock /home/liny2/fan/liny2_nav_dev/devel/./cmake.lock
-/home/liny2/fan/liny2_nav_dev/devel/.private/gridmap_2d/lib/libgridmap_2d.so /home/liny2/fan/liny2_nav_dev/devel/lib/libgridmap_2d.so
-/home/liny2/fan/liny2_nav_dev/devel/.private/gridmap_2d/lib/pkgconfig/gridmap_2d.pc /home/liny2/fan/liny2_nav_dev/devel/lib/pkgconfig/gridmap_2d.pc
-/home/liny2/fan/liny2_nav_dev/devel/.private/gridmap_2d/share/gridmap_2d/cmake/gridmap_2dConfig.cmake /home/liny2/fan/liny2_nav_dev/devel/share/gridmap_2d/cmake/gridmap_2dConfig.cmake
-/home/liny2/fan/liny2_nav_dev/devel/.private/gridmap_2d/share/gridmap_2d/cmake/gridmap_2dConfig-version.cmake /home/liny2/fan/liny2_nav_dev/devel/share/gridmap_2d/cmake/gridmap_2dConfig-version.cmake
