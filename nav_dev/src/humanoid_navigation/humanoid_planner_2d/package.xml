@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>humanoid_planner_2d</name>
+  <version>0.4.2</version>
+  <description>
+    humanoid_planner_2d - provides a simple 2D path planner as wrapper around SBPL (ARA*, AD*, R*).
+  </description>
+  <license>BSD</license>
+  <author>Armin Hornung</author>
+  <maintainer email="aravindadp@gmail.com">Pramuditha Aravinda</maintainer>
+  <maintainer email="pyo@robotis.com">Pyo</maintainer>
+  <url type="website">http://wiki.ros.org/humanoid_planner_2d</url>
+  <url type="repository">https://github.com/ROBOTIS-GIT/humanoid_navigation</url>
+  <url type="bugtracker">https://github.com/ROBOTIS-GIT/humanoid_navigation/issues</url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>gridmap_2d</depend>
+  <depend>sbpl</depend>
+</package>

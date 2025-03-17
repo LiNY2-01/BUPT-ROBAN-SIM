@@ -1,0 +1,33 @@
+### Footstep parameterization for the Aldebaran Robotics Nao humanoid #########
+
+### footstep settings #########################################################
+
+# Footstep displacement vectors (in meter / rad)
+# NOTE: not all footsteps within the max values can be performed since the
+#       boundary of allowd footsteps is an ellipse
+# WARNING: data type has to be float since integers will cause an exception
+footsteps:
+  x:     [0.0,0.05,0.02,0.04,0.02,0.00,-0.02,-0.03,-0.03,-0.02,0.00,0.03, 0.0]
+  y:     [0.1,0.10,0.10,0.13,0.13,0.14, 0.13, 0.10, 0.10, 0.13,0.09,0.09, 0.12]
+  theta: [0.0,0.00,0.30,0.00,0.30,0.00, 0.30, 0.00, 0.30, 0.00,0.00,0.00,-0.3]
+
+
+### foot settings #############################################################
+
+foot:
+  size: {x: 0.16, y: 0.088, z: 0.015}
+  separation: 0.095
+  origin_shift: {x: 0.02, y: 0.006}
+  # bounding box of allowed footsteps; refined by the more accurate step range
+  max:
+    step: {x: 0.07, y: 0.15, theta: 0.3}
+    inverse:
+      step: {x: -0.03, y: 0.095, theta: -0.1}
+
+
+### step range ################################################################
+
+# more accurate than the bounding box defined by the max/max inverse step
+step_range:
+  x: [0.00, 0.01, 0.02, 0.03, 0.05, 0.06, 0.07, 0.070,-0.030,-0.03,-0.02,-0.01]
+  y: [0.15, 0.15, 0.15, 0.14, 0.13, 0.13, 0.12, 0.095, 0.095, 0.13, 0.14, 0.15]

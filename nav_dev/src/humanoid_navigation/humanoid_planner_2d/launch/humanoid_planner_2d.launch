@@ -1,0 +1,21 @@
+<launch>
+	<!-- <arg name="map_file" default="/home/lexington2002/Workspace/maps/roban_museum/roban_museum.yaml"/> -->
+	<!-- <arg name="open_rviz" default="true"/> -->
+
+	<node pkg="humanoid_planner_2d" type="sbpl_2d_planner_node" name="humanoid_planner_2d" output="screen" >
+		<remap from="initialpose" to="/sim/torso/PoseCov_plan"/>
+    	<remap from="map" to="/projected_map"/>
+    	<remap from="goal" to="/move_base_simple/goal"/>
+		<!-- 行进过程中搜索路径模式 -->
+		<param name="forward_search" value="true"/>
+		<!-- <param name="forward_search" value="true"/> -->
+		<param name="robot_radius" value="0.4"/>
+	</node>
+	<!-- <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/> -->
+
+	<!-- rviz -->
+	<!-- <group if="$(arg open_rviz)">  -->
+		<!-- <node pkg="rviz" type="rviz" name="rviz" required="true" -->
+			<!-- args="-d $(find humanoid_planner_2d)/rviz/humanoid_planner_2d.rviz"/> -->
+	<!-- </group> -->
+</launch>

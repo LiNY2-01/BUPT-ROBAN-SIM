@@ -1,0 +1,12 @@
+# ROS package
+build/
+
+# Specific ignores for ROS msgs
+humanoid_nav_msgs/src
+msg_gen
+srv_gen
+# Actionlib:
+humanoid_nav_msgs/msg/*Action.msg
+humanoid_nav_msgs/msg/*Feedback.msg
+humanoid_nav_msgs/msg/*Goal.msg
+humanoid_nav_msgs/msg/*Result.msg

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>footstep_planner</name>
+  <version>0.4.2</version>
+  <description>
+    <p>A footstep planner for humanoid / biped robots. The planner builds on SBPL and has anytime as well as dynamic replanning capabilities. The supported planners are: ARA*, AD*, R*.</p>
+    <p>Details can be found in the following publications:</p>
+    <p><em>"Humanoid Navigation with Dynamic Footstep Plans"</em>
+    by J. Garimort, A. Hornung, and M. Bennewitz; published in 
+    Proc. of the IEEE International Conference on Robotics &amp; Automation (ICRA), 2011</p>
+    <p><em>Anytime Search-Based Footstep Planning with Suboptimality Bounds</em>
+    by A. Hornung, A. Dornbush, M. Likhachev, and M. Bennewitz; published in
+    Proc. of the IEEE-RAS International Conference on Humanoid
+    Robots (HUMANOIDS), 2012</p>
+  </description>
+  <license>GPLv3</license>
+  <author>Johannes Garimort</author>
+  <author>Armin Hornung</author>
+  <maintainer email="aravindadp@gmail.com">Pramuditha Aravinda</maintainer>
+  <maintainer email="pyo@robotis.com">Pyo</maintainer>
+  <url type="website">http://wiki.ros.org/footstep_planner</url>
+  <url type="repository">https://github.com/ROBOTIS-GIT/humanoid_navigation</url>
+  <url type="bugtracker">https://github.com/ROBOTIS-GIT/humanoid_navigation/issues</url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>actionlib</depend>
+  <depend>rosconsole</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>humanoid_nav_msgs</depend>
+  <depend>tf</depend>
+  <depend>angles</depend>
+  <depend>gridmap_2d</depend>
+  <depend>map_server</depend>
+  <depend>libopencv-dev</depend>
+  <depend>sbpl</depend>
+</package>

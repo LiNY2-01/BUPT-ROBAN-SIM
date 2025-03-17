@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>humanoid_localization</name>
+  <version>0.4.2</version>
+  <description>
+    <p>6D localization for humanoid robots based on depth data (laser, point clouds).
+    Two observation models are currently available based on OctoMap as 3D map:
+    Ray casting and an end point model (lookup in the distance map).</p>
+    <p>Details can be found in the publication <br/>
+    <em>"Humanoid Navigation with Dynamic Footstep Plans"</em>
+    by A. Hornung, K.M. Wurm, and M. Bennewitz; published in 
+    IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2010</p>
+  </description>
+  <license>GPLv3</license>
+  <author>Armin Hornung</author>
+  <author>Stefan Osswald</author>
+  <author>Daniel Maier</author>
+  <maintainer email="aravindadp@gmail.com">Pramuditha Aravinda</maintainer>
+  <maintainer email="pyo@robotis.com">Pyo</maintainer>
+  <url type="website">http://wiki.ros.org/humanoid_localization</url>
+  <url type="repository">https://github.com/ROBOTIS-GIT/humanoid_navigation</url>
+  <url type="bugtracker">https://github.com/ROBOTIS-GIT/humanoid_navigation/issues</url>
+  <buildtool_depend>catkin</buildtool_depend> 
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>octomap_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>cmake_modules</depend>
+  <depend>tf</depend>
+  <depend>message_filters</depend>
+  <depend>octomap_ros</depend>
+  <depend>octomap</depend>
+  <depend>dynamic_edt_3d</depend>
+  <depend>pcl_ros</depend>
+  <depend>pcl_conversions</depend>
+  <depend>boost</depend>
+  <depend>eigen</depend>
+</package>

@@ -1,0 +1,113 @@
+#
+# 6D localization configuration for the Nao humanoid with laser head
+#
+
+
+ # raycasting (slow) or endpoint model (approx)
+use_raycasting: true
+
+# for testing only!
+# weight_factor_roll: 0.0
+# weight_factor_pitch: 0.0
+#weight_factor_z: 5.0
+
+
+num_particles: 500
+init_global: false
+init_from_truepose: false
+
+# global loc:
+# num_particles: 20000
+# init_global: true
+# init_from_truepose: false
+
+# rel. number of effectice particles for resampling threshold (0: never, 1: always)
+neff_factor: 1.0 
+
+# minimum weight for a particle (normal scale, need to sum up to < 1!)
+# Warning: this keeps the particles from converging properly!
+#min_particle_weight: 0.000001
+
+sensor_sampling_dist: 0.25
+
+# min traversed odometry interval between laser measurements:
+# 
+update_min_trans: 0.2
+update_min_rot: 0.4
+
+# laser obs. model (for raycasting only)
+raycasting/z_hit: 0.8
+raycasting/z_short: 0.1
+raycasting/z_max: 0.05
+raycasting/z_rand: 0.05
+raycasting/sigma_hit: 0.02
+raycasting/lambda_short: 0.1
+
+# laser obs.model (for endpoint model only)
+# std.dev for gaussian (p_hit)
+#use in loc
+endpoint/sigma: 0.05
+#used for global:
+#laser_endp_sigma: 0.07
+
+
+#motion_mean_z: 0.317
+#motion_range_z: 0.03
+#motion_range_roll: 0.25
+#motion_range_pitch: 0.1
+
+motion_sigma_z: 0.02
+motion_sigma_roll: 0.015 # 0.85 deg.
+motion_sigma_pitch: 0.015 # 0.85 deg.
+
+# noise of the motion model
+# std.devs for z,r,p depend on amount of translation (per meter):
+motion_noise/z: 0.05   # per m
+motion_noise/roll: 0.1    # per m
+motion_noise/pitch: 0.1    # per m
+
+#noise affecting x direction (sq. / variance)
+motion_noise/xx:    0.03
+motion_noise/xy:   0.05
+motion_noise/xt: 0.0003
+#noise affecting y direction (sq. / variance)
+motion_noise/yx:    0.13
+motion_noise/yy:   0.09
+motion_noise/yt:  0.004
+#noise affecting orientation (sq. / variance)
+motion_noise/tx:     1.58
+motion_noise/ty:     1.03
+motion_noise/tt:    0.11
+
+# single linear dependencies are no longer used!
+#motion_noise/x: 0.15  
+#motion_noise/y: 0.15  
+#motion_noise/yaw: 0.8 
+
+# odometry calibration for 2D drift (x,y,theta)
+# this is the identy matrix - uses odometry uncalibrated
+motion_calib/xx:  1.0
+motion_calib/xy:  0.0
+motion_calib/xt:  0.0
+motion_calib/yx:  0.0
+motion_calib/yy:  1.0
+motion_calib/yt:  0.0
+motion_calib/tx:  0.0
+motion_calib/ty:  0.0
+motion_calib/tt:  1.0
+
+# initial pose (when no truepose available):
+initial_pose/x: 2.0
+initial_pose/y: 2.0
+initial_pose/z: 0.31     # over z-plane 
+initial_pose/roll: 0.0
+initial_pose/pitch: 0.0
+initial_pose/yaw: 4.71    
+
+# std dev for initial noise (truepose or manual init)
+initial_std/x: 0.03
+initial_std/y: 0.03
+initial_std/z: 0.015
+initial_std/roll: 0.04
+initial_std/pitch: 0.04
+initial_std/yaw: 0.2    # ~13 deg

@@ -1,0 +1,29 @@
+/**
+\mainpage
+\htmlinclude manifest.html
+
+\b footstep_planner is a package to provide footstep planning for humanoid or biped robots. 
+
+<!-- 
+Provide an overview of your package.
+-->
+
+
+\section codeapi Code API
+
+The main functionality is in the FootstepPlanner class, which is wrapped by 
+FootstepPlannerNode for stand-alone planning in footstep_planner.cpp
+
+<!--
+Provide links to specific auto-generated API documentation within your
+package that is of particular interest to a reader. Doxygen will
+document pretty much every part of your code, so do your best here to
+point the reader to the actual API.
+
+If your codebase is fairly large or has different sets of APIs, you
+should use the doxygen 'group' tag to keep these APIs together. For
+example, the roscpp documentation has 'libros' group.
+-->
+
+
+*/
